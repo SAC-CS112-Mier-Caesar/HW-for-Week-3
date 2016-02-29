@@ -9,6 +9,7 @@ Section 4.13: Counter controlled repition would be appropriate for calculating t
 Section 4.14: In preincrementing a variable the the value to that variable will be raised by one then the new value of the variable is used in the expression it appears. When postincremeting a variable the value that is current is assigned to the variable and is then incremented by one. 
 
 Section 4.15:
+
 	a. No semicolon after (age>=65);
 	   The quotation mark goes inside the parenthesis
 	
@@ -17,3 +18,36 @@ Section 4.15:
 	c. Missing the braces inside the while loop {}
 	
 	d. It is an infinite loop. Perhaps change ++ to --. Also missing the closing braces at the end }.
+	
+	
+
+BONUS CALCULATOR
+
+import java.util.Scanner;
+
+public class Calculator {
+	public static void main(String args[]){
+		
+		Scanner input = new Scanner(System.in);
+		double fnum, snum, sum, subtraction, multiplication, division;
+		
+		System.out.println("Enter first number: ");
+		fnum = input.nextDouble();
+		
+		System.out.println("Enter second number: ");
+		snum = input.nextDouble();
+		
+		sum = fnum + snum;
+		
+		subtraction = fnum - snum;
+		
+		multiplication = fnum * snum;
+		
+		division = fnum / snum;
+		
+		
+		System.out.printf("The sum is %.2f %nThe subtraction is %.2f %nThe multiple is %.2f %nThe division is %.2f %n", 
+				sum, subtraction, multiplication, division);
+	}
+
+}
